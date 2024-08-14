@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon" />
+    <title>Taller Propedéutico de Ingreso al PCCM</title>
+    <script type="text/javascript" id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ccm.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-black" data-bs-theme="dark">
+    <div class="container">
+        <div class="d-flex flex-row align-items-center">
+            <div><img class="d-none d-md-inline-block" src="img/nav-unam.png" alt="Escudo UNAM"></div>
+            <div class="ms-2"><img class="d-none d-md-inline-block" src="img/nav-unam-txt.png" alt="Texto UNAM"></div>
+        </div>
+        <div>
+            <img  class="ms-1 ms-sm-4" src="img/nav-ccm.png" alt="Escudo CCM">
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center ">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#schedule">Programa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Código de conducta</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="hero-image"></div>
+
+<section id="infographic">
+    <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-evenly">
+            <!--<div class="d-flex flex-column mb-5">
+                <div class="info-icon">
+                    <img src="img/i-fecha.png" alt="calendario">
+                </div>
+                <div class="info-graph-title">29 de julio al</div>
+                <div class="info-graph-subtitle">2 de agosto</div>
+            </div>-->
+            <div class="d-flex flex-column mb-5">
+                <div class="info-icon">
+                    <img src="img/i-fecha.png" alt="fecha">
+                </div>
+                <div class="info-graph-title">07 al 11 de Octubre</div>
+            </div>
+            <div class="d-flex flex-column mb-5">
+                <div class="info-icon">
+                    <img src="img/i-limite.png" alt="Límite">
+                </div>
+                <div class="info-graph-title">27 de agosto</div>
+                <div class="info-graph-subtitle">Límite de registro</div>
+            </div>
+            <div class="d-flex flex-column mb-5">
+                <div class="info-icon">
+                    <img src="img/i-cupo.png" alt="note">
+                </div>
+                <div class="info-graph-title">Cupo</div>
+                <div class="info-graph-subtitle">Limitado</div>
+            </div>
+            <div class="d-flex flex-column mb-5">
+                <div class="info-icon">
+                    <img src="img/i-programa.png" alt="note">
+                </div>
+                <div class="info-graph-title">2 Cursos</div>
+                <div class="info-graph-title">4 Charlas</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="intro">
+    <div class="container pb-5 mt-5">
+
+        <div class="text-center my-5">
+            <a class="btn  btn-lg btn-orange" href="#" role="button">¡Regístrate ahora!</a>
+        </div>
+
+        <div class="mt-5">
+            <h2 class="text-center">Taller Propedéutico de Ingreso al PCCM</h2>
+            <div class="d-flex justify-content-center">
+                <div class="content mt-4">La finalidad que tiene el Taller Propedéutico es apoyar a los estudiantes en la
+                    preparación del examen de ingreso al PCCM. Durante el taller se desarrollan cuatro cursos: álgebra
+                    lineal, cálculo diferencial e integral y dos optativos relacionados con las áreas de investigación
+                    de los profesores del PCCM.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="dirigido">
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <div class="dirigido-a">
+                Dirigido a estudiantes de licenciatura o maestría en Matemáticas o áreas afines.
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="schedule">
+
+    <div class="container">
+        <h1>Cursos - 10 horas</h1>
+
+        <div class="row mb-5">
+            <div class="col-12 col-sm-6">
+                <div class="d-flex align-items-center curso" data-bs-toggle="modal" data-bs-target="#ArocaModal">
+                    <div class="justify-content-start"><span class="yellow-circle"><span class="code">C1</span></span></div>
+                    <div class="talk">
+                        <div class="title"><!--<i class="bi bi-link-45deg"></i>-->Cálculo</div>
+                        <div class="professor">José A. Zapata</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="d-flex align-items-center curso" data-bs-toggle="modal" data-bs-target="#manjarrezModal">
+                    <div class="justify-content-start"><span class="yellow-circle"><span class="code">C2</span></span></div>
+                    <div class="talk">
+                        <div class="title"> Álgebra</div>
+                        <div class="professor">Daniel Duarte</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1>Curso - 6 horas</h1>
+
+        <div class="row mb-5">
+            <div class="col-12 col-sm-6">
+                <div class="d-flex align-items-center curso" data-bs-toggle="modal" data-bs-target="#hrusakModal">
+                    <div class="justify-content-start"><span class="yellow-circle"><span class="code">C1</span></span></div>
+                    <div class="talk">
+                        <div class="title"><i class="bi bi-link-45deg"></i> Infinitos diferentes</div>
+                        <div class="professor">Michael Hrusak</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="mt-5">Pláticas - 50 min</h1>
+
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <div class="d-flex align-items-center curso" data-bs-toggle="modal" data-bs-target="#ferranModal">
+                    <div class="justify-content-start"><span class="yellow-circle"><span class="code">P1</span></span></div>
+                    <div class="talk">
+                        <div class="title"><i class="bi bi-link-45deg"></i> Gsuperficies de traslación</div>
+                        <div class="professor">Ferrán Valdez</div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center curso" data-bs-toggle="modal" data-bs-target="#balanzarioModal">
+                    <div class="justify-content-start"><span class="yellow-circle"><span class="code">P2</span></span></div>
+                    <div class="talk">
+                        <div class="title"><i class="bi bi-link-45deg"></i> Irregularidades en la distribución de los números primos</div>
+                        <div class="professor">Eugenio Balanzario</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6">
+                <div class="d-flex align-items-center curso" data-bs-toggle="modal" data-bs-target="#osunaModal">
+                    <div class="justify-content-start"><span class="yellow-circle"><span class="code">P3</span></span></div>
+                    <div class="talk">
+                        <div class="title"><i class="bi bi-link-45deg"></i> Sistemas dinámicos en acción</div>
+                        <div class="professor">Osvaldo Osuna</div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center curso" data-bs-toggle="modal" data-bs-target="#fernandoModal">
+                    <div class="justify-content-start"><span class="yellow-circle"><span class="code">P4</span></span></div>
+                    <div class="talk">
+                        <div class="title"><i class="bi bi-link-45deg"></i> Los reales como espacio vectorial y algunas consecuencias curiosas</div>
+                        <div class="professor">Fernando Hernández</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="hrusakModal" tabindex="-1" aria-labelledby="hrusakModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="hrusakModalLabel">Infinitos diferentes</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <strong>Michael Hrusak</strong><br><br>
+                        Vamos a comparar las propiedades de las dos primeras cardinalidades infinitas concentrándonos en
+                        sus diferencias. Mencionaremos fenómenos que ejemplifican dicha diferencia provenientes de varias
+                        ramas de las matemáticas incluyendo topología, análisis y la teoría Ramsey.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="ferranModal" tabindex="-1" aria-labelledby="ferranModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="ferranModalLabel">Gsuperficies de traslación</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <strong>Ferrán Valdez</strong><br><br>
+                        Dentro de la geometría, las superficies de traslación y de dilatación ocupan un lugar especial.
+                        En esta charla las definiremos y veremos cómo diferentes problemas de la física como los billares
+                        o el viento en los árboles nos llevan a considerar estructuras geométricas en este tipo de superficies.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="balanzarioModal" tabindex="-1" aria-labelledby="balanzarioModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="balanzarioModalLabel">Irregularidades en la distribución de los números primos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <strong>Eugenio Balanzario</strong><br><br>
+                        Con el teorema de los números primos se pone de manifiesto cierta regularidad en la distribución
+                        de los números primos a lo largo de la recta real. Sin embargo, un análisis más minucioso pone
+                        de manifiesto algunas irregularidades en la distribución de los primos. Así por ejemplo, es fácil
+                        ver que existen lagunas arbitrariamente grandes en donde no se encuentra ningún número primo, pero
+                        por otro lado, se ha conjeturado que existe un número infinito de primos gemelos, es decir, pares
+                        de primos cuya diferencia es igual a 2. Otro caso de irregularidad es la observación de Chebyshev
+                        según la cual existe  una superabundancia de primos congruentes con 3 módulo 4 con respecto a los
+                        primos congruentes con 1.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="osunaModal" tabindex="-1" aria-labelledby="osunaModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="osunaModalLabel">Sistemas dinámicos en acción</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <strong>Osvaldo Osuna</strong><br><br>
+                        En esta plática mediante ejemplos se discuten conceptos, resultados y tópicos de estudio en esta área.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="fernandoModal" tabindex="-1" aria-labelledby="fernandoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="fernandoModalLabel">Los reales como espacio vectorial y algunas consecuencias curiosas.</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <strong>Fernando Hernández</strong><br><br>
+                        El campo de los números reales, \(\mathbb R\) es poco usado como espacio vectorial sobre el campo
+                        de los números racionales, \(\mathbb Q\). Es un conjunto familiar que también es un espacio vectorial
+                        de dimensión infinita. Hay algunas consecuencias curiosas cuando uno saca provecho de esa infinidad
+                        de dimensiones. En la charla hablaremos de algunas de ellas y otras que también pueden obtenerse
+                        de motivaciones algebraicas.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="mt-5">Programa</h1>
+
+        <ul class="nav nav-tabs my-5">
+            <li class="nav-item">
+                <a class="nav-link active" id="tab-0" data-bs-toggle="tab" href="#tabpanel-0" role="tab" aria-controls="tabpanel-0" aria-selected="false">Lunes 7</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="tab-1" data-bs-toggle="tab" href="#tabpanel-1" role="tab" aria-controls="tabpanel-1" aria-selected="false">Martes 8</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="tab-2" data-bs-toggle="tab" href="#tabpanel-2" role="tab" aria-controls="tabpanel-2" aria-selected="false">Miércoles 9</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="tab-3" data-bs-toggle="tab" href="#tabpanel-3" role="tab" aria-controls="tabpanel-3" aria-selected="false">Jueves 10</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="tab-4" data-bs-toggle="tab" href="#tabpanel-4" role="tab" aria-controls="tabpanel-4" aria-selected="false">Viernes 11</a>
+            </li>
+        </ul>
+        <div class="tab-content pt-2 mb-5" id="tab-content">
+            <div class="tab-pane active" id="tabpanel-0" role="tabpanel" aria-labelledby="tab-0">
+                <div class="schedule-day d-flex flex-column">
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">09:00 - 11:00</div>
+                        <div class="schedule-talk mb-3" data-bs-toggle="modal" data-bs-target="#">
+                            <div class="schedule-title">C1 - Cálculo </div>
+                            <div class="schedule-professor">José Antonio Zapata</div>
+                        </div>
+                    </div>
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">11:00 - 11:20</div>
+                        <div class="schedule-talk">
+                            <div class="schedule-title orange">Café</div>
+                        </div>
+                    </div>
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">11:20 - 13:00</div>
+                        <div class="schedule-talk">
+                            <div class="schedule-title">Infinitos diferentes</div>
+                            <div class="schedule-professor">Michael Hrusak</div>
+                        </div>
+                    </div>
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">13:20 - 14:20</div>
+                        <div class="schedule-talk">
+                            <div class="schedule-title">Gsuperficies de traslación</div>
+                            <div class="schedule-professor">Ferrán Valdez</div>
+                        </div>
+                    </div>
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">14:20 - 16:00</div>
+                        <div class="schedule-talk">
+                            <div class="schedule-title orange">Comida</div>
+                        </div>
+                    </div>
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">16:00 - 18:00</div>
+                        <div class="schedule-talk">
+                            <div class="schedule-title">C2 - Álgebra</div>
+                            <div class="schedule-professor">Daniel Duarte</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tab-pane" id="tabpanel-1" role="tabpanel" aria-labelledby="tab-1">
+                <div class="schedule-day d-flex flex-column">
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">09:00 - 11:00</div>
+                        <div class="schedule-talk mb-3" data-bs-toggle="modal" data-bs-target="#">
+                            <div class="schedule-title">C2 - Álgebra</div>
+                            <div class="schedule-professor">Daniel Duarte</div>
+                        </div>
+                    </div>
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">11:00 - 11:20</div>
+                        <div class="schedule-talk">
+                            <div class="schedule-title orange">Café</div>
+                        </div>
+                    </div>
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">11:20 - 13:00</div>
+                        <div class="schedule-talk">
+                            <div class="schedule-title">Infinitos diferentes</div>
+                            <div class="schedule-professor">Michael Hrusak</div>
+                        </div>
+                    </div>
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">13:20 - 14:20</div>
+                        <div class="schedule-talk">
+                            <div class="schedule-title">Irregularidades en la distribución de los números primos</div>
+                            <div class="schedule-professor">Eugenio Balanzario</div>
+                        </div>
+                    </div>
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">14:20 - 16:00</div>
+                        <div class="schedule-talk">
+                            <div class="schedule-title orange">Comida</div>
+                        </div>
+                    </div>
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">16:00 - 18:00</div>
+                        <div class="schedule-talk">
+                            <div class="schedule-title">C1 - Cálculo </div>
+                            <div class="schedule-professor">José Antonio Zapata</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tab-pane" id="tabpanel-2" role="tabpanel" aria-labelledby="tab-2">
+                <div class="schedule-day d-flex flex-column">
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">09:00 - 11:00</div>
+                        <div class="schedule-talk mb-3" data-bs-toggle="modal" data-bs-target="#">
+                            <div class="schedule-title">C1 - Cálculo </div>
+                            <div class="schedule-professor">José Antonio Zapata</div>
+                        </div>
+                    </div>
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">11:00 - 11:20</div>
+                        <div class="schedule-talk">
+                            <div class="schedule-title orange">Café</div>
+                        </div>
+                    </div>
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">11:20 - 13:00</div>
+                        <div class="schedule-talk">
+                            <div class="schedule-title">Infinitos diferentes</div>
+                            <div class="schedule-professor">Michael Hrusak</div>
+                        </div>
+                    </div>
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">13:20 - 14:20</div>
+                        <div class="schedule-talk" data-bs-toggle="modal" data-bs-target="#osunaModal">
+                            <div class="schedule-title">Sistemas dinámicos en acción</div>
+                            <div class="schedule-professor">Osvaldo Osuna</div>
+                        </div>
+                    </div>
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">14:20 - 16:00</div>
+                        <div class="schedule-talk">
+                            <div class="schedule-title orange">Comida</div>
+                        </div>
+                    </div>
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">16:00 - 18:00</div>
+                        <div class="schedule-talk">
+                            <div class="schedule-title">C2 - Álgebra</div>
+                            <div class="schedule-professor">Daniel Duarte</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tab-pane" id="tabpanel-3" role="tabpanel" aria-labelledby="tab-3">
+                <div class="schedule-day d-flex flex-column">
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">09:00 - 11:00</div>
+                        <div class="schedule-talk mb-3" data-bs-toggle="modal" data-bs-target="#">
+                            <div class="schedule-title">C2 - Álgebra</div>
+                            <div class="schedule-professor">Daniel Duarte</div>
+                        </div>
+                    </div>
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">11:00 - 11:20</div>
+                        <div class="schedule-talk">
+                            <div class="schedule-title orange">Café</div>
+                        </div>
+                    </div>
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">11:20 - 13:00</div>
+                        <div class="schedule-talk">
+                            <div class="schedule-title">C1 - Cálculo </div>
+                            <div class="schedule-professor">José Antonio Zapata</div>
+                        </div>
+                    </div>
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">13:20 - 14:20</div>
+                        <div class="schedule-talk">
+                            <div class="schedule-title">Los reales como espacio vectorial y algunas consecuencias curiosas.</div>
+                            <div class="schedule-professor">Fernando Hernández</div>
+                        </div>
+                    </div>
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">14:20 - 16:00</div>
+                        <div class="schedule-talk">
+                            <div class="schedule-title orange">Comida</div>
+                        </div>
+                    </div>
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">16:00 - 18:00</div>
+                        <div class="schedule-talk">
+                            <div class="schedule-title">C2 - Álgebra</div>
+                            <div class="schedule-professor">Daniel Duarte</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="tab-pane" id="tabpanel-4" role="tabpanel" aria-labelledby="tab-4">
+                <div class="schedule-day d-flex flex-column">
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">09:00 - 11:00</div>
+                        <div class="schedule-talk mb-3" data-bs-toggle="modal" data-bs-target="#">
+                            <div class="schedule-title">C1 - Cálculo </div>
+                            <div class="schedule-professor">José Antonio Zapata</div>
+                        </div>
+                    </div>
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">11:00 - 11:20</div>
+                        <div class="schedule-talk">
+                            <div class="schedule-title orange">Café</div>
+                        </div>
+                    </div>
+                    <div class="schedule-event d-flex flex-row">
+                        <div class="schedule-time">11:20 - 13:00</div>
+                        <div class="schedule-talk">
+                            <div class="schedule-title">PCCM</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="footer">
+    <div class="container">
+        <div class="d-flex flex-column justify-content-center flex-md-row justify-content-md-around mt-5">
+            <div class="sponsor mb-5 d-flex justify-content-center"><img class="img-fluid" src="img/footer-unam.png" alt="Logo UNAM"></div>
+            <div class="sponsor mb-5 d-flex justify-content-center"><img class="img-fluid" src="img/footer-umsnh.png" alt="Logo UMICH"></div>
+            <div class="sponsor mb-5 d-flex justify-content-center"><img class="img-fluid" src="img/footer-ccm.png" alt="Logo CCM"></div>
+            <div class="sponsor mb-5 d-flex justify-content-center"><img class="img-fluid" src="img/footer-cic.png" alt="Logo CIC"></div>
+            <div class="sponsor mb-5 d-flex justify-content-center"><img class="img-fluid" src="img/footer-fismat.png" alt="Logo fismat"></div>
+            <div class="sponsor mb-5 d-flex justify-content-center"><img class="img-fluid" src="img/footer-ifm.png" alt="Logo IFM"></div>
+        </div>
+
+        <h4 class="organizer mb-4 d-flex justify-content-center fw-bold">Contacto</h4>
+        <div class="d-flex flex-column justify-content-center flex-md-row">
+            <div class="organizer mb-5 d-flex justify-content-center">nangelina<i class="bi bi-at"></i> matmor.unam.mx</div>
+        </div>
+
+        <hr class="white">
+        <div class="copyright text-center">Centro de Ciencias Matemáticas</div>
+        <div class="copyright text-center">Universidad Nacional Autónoma de México Campus Morelia</div>
+        <div class="copyright text-center">todos los derechos reservados © 2024.</div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const days = ['tab-0', 'tab-1', 'tab-2', 'tab-3', 'tab-4'];
+        const today = new Date().getDay();
+
+        const dayIndex = (today + 6) % 7;
+
+        if (dayIndex >= 0 && dayIndex < days.length) {
+            const activeTab = document.getElementById(days[dayIndex]);
+            const activePanelId = activeTab.getAttribute('href').substring(1);
+
+            document.querySelectorAll('.nav-link').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-pane').forEach(panel => panel.classList.remove('show', 'active'));
+
+            activeTab.classList.add('active');
+
+            const activePanel = document.getElementById(activePanelId);
+            activePanel.classList.add('show', 'active');
+        }
+    });
+</script>
+
+</body>
+</html>
