@@ -286,11 +286,18 @@ H1 {
 
 }
 
+#schedule .nav-tabs .nav-link {
+    padding: 8px 12px;
+}
+
 #schedule .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
     isolation: isolate;
     border-color: #F95206;
 }
 
+#schedule .nav-item .nav-link {
+    min-width: 60px;
+}
 
 #schedule .nav-link {
     color: #000000;
@@ -299,9 +306,7 @@ H1 {
     justify-content: center;
 }
 
-.nav-tabs .nav-link {
-    padding: 12px 48px;
-}
+
 
 #comites {
     padding: 70px 0;
@@ -436,6 +441,10 @@ li {
         line-height: 28px;
         letter-spacing: 0;
         color: #202020;
+    }
+
+    #schedule .nav-tabs .nav-link {
+        padding: 12px 48px;
     }
 
 }
